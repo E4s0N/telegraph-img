@@ -33,7 +33,7 @@ async function handleRequest(context) {
     const formatter = new Intl.DateTimeFormat('zh-CN', options);
     const formattedDate = formatter.format(timedata);
 
-    const allowedDomains = ["aicodev.cn","iyixue.cn","medblog.cn","drcodes.cn","blog.drcodes.cn"]
+    const allowedDomains = ["aicodev.cn","iyixue.cn","medblog.cn","drcodes.cn","blog.drcodes.cn","tgp.pages.dev"]
     try {
         let refererUrl = new URL(Referer)
         if(!allowedDomains.includes(refererUrl.hostname)){
