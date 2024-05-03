@@ -37,7 +37,7 @@ async function handleRequest(context) {
     try {
         let refererUrl = new URL(Referer)
         if(!allowedDomains.includes(refererUrl.hostname)){
-            return Response.redirect("https://img.131213.xyz/asset/image/blocked.png", 302);
+            return Response.redirect("https://tgp.pages.dev/file/dd6b212182fecc96b637f.png", 302);
         }
         if (Referer == url.origin + "/admin" || Referer == url.origin + "/list") {
             return res_img;
